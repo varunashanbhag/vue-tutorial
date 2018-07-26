@@ -1,2 +1,2 @@
 # Udacity Vue.js Assignments/Course Projects
-Udemy Vue.js Course Projects and Assignments
+Project to store personal Udemy Vue.js course projects, assignments and practice tasks
