@@ -50,7 +50,7 @@ new Vue({
                 return true;
             }
             if(this.playerHealth<=0) {
-                this.checkDecision("Lost");
+                this.checkDecision("Lost.");
             }
         },
         checkDecision: function(msg) {
