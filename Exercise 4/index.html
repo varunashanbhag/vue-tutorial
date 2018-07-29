@@ -1,0 +1,65 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="exercise">
+  <!-- 1) Start the Effect with the Button. The Effect should alternate the "highlight" or "shrink" class on each new setInterval tick (attach respective class to the div with id "effect" below) -->
+  <div>
+    <button @click="startEffect">Start Effect</button>
+    <div id="effect" :class="effect?'highlight':'shrink'"></div>
+  </div>
+  <!-- 2) Create a couple of CSS classes and attach them via the array syntax -->
+  <div :class="[bold, red]">I got no class :(</div>
+  <!-- 3) Let the user enter a class (create some example classes) and attach it -->
+  <div>
+    <input v-model='userClass' type="text">
+    <div id="visible" :class="userClass"> </div>
+  </div>
+  <!-- 4) Let the user enter a class and enter true/ false for another class (create some example classes) and attach the classes -->
+  <div>
+    <input type="text" v-model="userClass2">
+    <input type="text" v-model="booleanClass2">
+    <div id="visible" :class=booleanClass2?userClass2:""></div>
+  </div>
+  <!-- 5) Repeat 3) but now with values for styles (instead of class names). Attach the respective styles.  -->
+  <div>
+    <input type="text" v-model="userStyle">
+    <div id="visible" v-bind:style="{backgroundColor: userStyle}"></div>
+  </div>
+  <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
+  <div>
+    <button v-on:click="startProgress">Start Progress</button>
+    <div id="progress" :style="{width:width, color:red}"></div>
+  </div>
+</div>
+<link rel="stylesheet" href="./styles.css">
+<script type="text/javascript">
+  new Vue({
+  el: '#exercise',
+  data: {
+    effect: false,
+    bold: 'bold',
+    red: 'red',
+    userClass: '',
+    userClass2: '',
+    booleanClass2: false,
+    userStyle:"red",
+    width:0,
+  },
+  methods: {
+    startEffect: function() {
+      self = this;
+      setInterval(function() {
+        self.effect=!self.effect;
+      },1000);
+    },
+    startProgress: function() {
+      const vm = this;
+      width=0;
+      setInterval(function() {
+        width = width + 20;
+        vm.width = width;
+      },1000);
+    },
+  },
+});
+Vue.config.devtools = true;
+</script>
