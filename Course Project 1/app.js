@@ -4,12 +4,14 @@ new Vue({
         playerHealth: 100,
         monsterHealth: 100,
         isGameRunning: false,
+        log: [],
     },
     methods: {
         startNewGame: function() {
             this.playerHealth=100;
             this.monsterHealth=100;
             this.isGameRunning=true;
+            this.log=[];
         },
         attack: function() {
             if(this.calculateDamage(3,10)) {
@@ -25,21 +27,25 @@ new Vue({
         },
         heal: function () {
             this.monsterDamage();
-            this.playerHealth=Math.min(this.playerHealth+10,100)
+            var heal = Math.min(this.playerHealth+7,100);
+            this.playerHealth=heal;
+            this.log.unshift("Player Healed "+heal+"xp Damage");
         },
         giveUp: function() {
-            this.playerHealth=100;
-            this.monsterHealth=100;
             this.isGameRunning=false;
         },
         calculateDamage: function(min,max) {
-            this.monsterHealth -= Math.max(Math.floor(Math.random()*max)+1,min);
+            var damage = Math.max(Math.floor(Math.random()*max)+1,min);
+            this.monsterHealth -= damage;
+            this.log.unshift("Player Caused "+damage+"xp Damage");
             if(this.checkHealth()) {
                 return true;
             }
         },
         monsterDamage: function() {
-            this.playerHealth -= Math.max(Math.floor(Math.random()*12)+1,5);
+            var damage = Math.max(Math.floor(Math.random()*12)+1,5);
+            this.playerHealth -= damage;
+            this.log.unshift("Monster Caused "+damage+"xp Damage");
             if(this.checkHealth()) {
                 return true;
             }

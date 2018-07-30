@@ -13,7 +13,7 @@
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" :style="{width: playerHealth + '%'}" style="background-color: green; margin: 0; color: white;">
-                    <span>{{playerHealth}}</span>
+                    <span>{{playerHealth}}xp</span>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
             <h1 class="text-center">MONSTER</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" :style="{width: monsterHealth + '%'}" style="background-color: green; margin: 0; color: white;">
-                    <span>{{monsterHealth}}</span>
+                    <span>{{monsterHealth}}xp</span>
                 </div>
             </div>
         </div>
@@ -39,11 +39,11 @@
             <button @click="giveUp" id="give-up">GIVE UP</button>
         </div>
     </section>
-    <section class="row log">
+    <section class="row log" v-if="log.length>0">
         <div class="small-12 columns">
             <ul>
-                <li>
-
+                <li v-for="value in log">
+                    {{value}}
                 </li>
             </ul>
         </div>
