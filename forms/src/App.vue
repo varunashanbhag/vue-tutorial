@@ -31,7 +31,7 @@
                         <label for=""><input type="radio" value="Yes" v-model="storeData">Yes</label>
                         <label for=""><input type="radio" value="No" v-model="storeData">No</label>
                     </div>
-                    <button type="submit" @click.prevent="submitted=true" class="btn btn-primary">Submit</button>  
+                    <button type="submit" @click.prevent="submitted=!submitted" class="btn btn-primary">Submit</button>  
                 </div>
             </div>
         </form>
@@ -47,6 +47,7 @@
                         <p>Mail: {{email}}</p>
                         <p>Password: {{password}}</p>
                         <p>Store in Database?: {{storeData}}</p>
+                        <button @click.prevent="submitted=!submitted" class="btn btn-primary">Back</button>
                     </div>
                 </div>
             </div>
