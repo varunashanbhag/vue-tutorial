@@ -3,38 +3,46 @@
 	{
 		"selected_items":
 		[
+			[
+				"len",
+				"lengthMixin"
+			],
+			[
+				"length",
+				"lengthMixin\t(lengthMixin.js)"
+			],
+			[
+				"inputt",
+				"inputt\tinput - text"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<template>\n    <div></div>\n</template>\n\n<script>\n\n</script>\n\n<style scoped>\n    div {\n        border: 1px solid red;\n        background-color: lightcoral;\n        padding: 30px;\n        margin: 20px auto;\n        text-align: center\n    }\n</style>",
-			"file": "Red.vue",
-			"file_size": 246,
-			"file_write_time": 131225581630000000,
+			"file": "/D/Programs/vue-tutorial/Mixins/src/App.vue",
 			"settings":
 			{
-				"buffer_size": 246,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/Programs/vue-tutorial/slots/src/App.vue",
-			"settings":
-			{
-				"buffer_size": 1000,
+				"buffer_size": 1636,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<template>\n    <div>\n    \tslot\n    </div>\n</template>\n\n<script>\n\n</script>\n\n<style scoped>\n    div {\n        border: 1px solid blue;\n        background-color: lightblue;\n        padding: 30px;\n        margin: 20px auto;\n        text-align: center\n    }\n</style>",
-			"file": "Blue.vue",
-			"file_size": 246,
-			"file_write_time": 131225581630000000,
+			"file": "/D/Programs/vue-tutorial/Mixins/src/lengthMixin.js",
 			"settings":
 			{
-				"buffer_size": 261,
+				"buffer_size": 149,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Programs/vue-tutorial/Mixins/src/main.js",
+			"settings":
+			{
+				"buffer_size": 362,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -51,6 +59,18 @@
 		"selected_items":
 		[
 			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Remove Packa",
+				"Package Control: Remove Package"
+			],
+			[
 				"Insta",
 				"Package Control: Install Package"
 			],
@@ -64,10 +84,6 @@
 			],
 			[
 				"Install",
-				"Package Control: Install Package"
-			],
-			[
-				"Install ",
 				"Package Control: Install Package"
 			],
 			[
@@ -96,21 +112,26 @@
 	"expanded_folders":
 	[
 		"/D/Programs/vue-tutorial",
-		"/D/Programs/vue-tutorial/slots",
-		"/D/Programs/vue-tutorial/slots/src",
-		"/D/Programs/vue-tutorial/slots/src/components"
+		"/D/Programs/vue-tutorial/Mixins",
+		"/D/Programs/vue-tutorial/Mixins/src"
 	],
 	"file_history":
 	[
+		"/D/Programs/vue-tutorial/directives/src/App.vue",
+		"/D/Programs/vue-tutorial/forms/src/FullName.vue",
+		"/D/Programs/vue-tutorial/forms/src/App.vue",
 		"/D/Programs/vue-tutorial/slots/src/components/Green.vue",
 		"/D/Programs/vue-tutorial/slots/src/components/Blue.vue",
+		"/D/Programs/vue-tutorial/slots/src/components/Red.vue",
+		"/D/Programs/vue-tutorial/slots/src/App.vue",
+		"/D/Programs/vue-tutorial/.gitignore",
 		"/D/Programs/php/php.ini",
 		"/D/Software/php/php.ini",
 		"/D/Software/cmder/config/settings"
 	],
 	"find":
 	{
-		"height": 40.8
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -124,6 +145,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" $",
+			"FullName",
+			"fullName",
+			"showData",
+			"input",
+			"raido",
+			"Yes",
+			"\"><",
+			"\"email",
+			"email",
+			"\"name",
+			"name",
+			"selectedComponent",
+			"changeComponent",
+			"selectComponent"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -146,29 +182,31 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Red.vue",
+					"file": "/D/Programs/vue-tutorial/Mixins/src/App.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 246,
+						"buffer_size": 1636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								246,
-								246
+								1456,
+								1456
 							]
 						],
 						"settings":
 						{
-							"auto_complete": true,
+							"auto_complete": false,
 							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax"
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 115.2,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -176,58 +214,27 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/D/Programs/vue-tutorial/slots/src/App.vue",
+					"file": "/D/Programs/vue-tutorial/Mixins/src/lengthMixin.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1000,
+						"buffer_size": 149,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								585,
-								585
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Blue.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								26,
-								30
+								29,
+								29
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax"
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -235,13 +242,43 @@
 					},
 					"stack_index": 1,
 					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Programs/vue-tutorial/Mixins/src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"input":
 	{
